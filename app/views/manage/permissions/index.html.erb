@@ -1,0 +1,13 @@
+<h1>Управление правами</h1>
+
+<p><%= link_to "Добавить роль", new_manage_permission_path %></p>
+
+<% if @permissions.any? %>
+  <ul class='list'>
+    <%= render @permissions %>
+  </ul>
+<% else %>
+  <p>Информация отсутствует</p>
+<% end %>
+
+<%= paginate @permissions %>

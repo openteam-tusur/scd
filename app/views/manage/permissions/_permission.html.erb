@@ -1,0 +1,12 @@
+<li class='list-item <%= cycle( 'odd', 'even' ) %>'>
+  <div class='actions'>
+    <%= link_to manage_permission_path(permission), :method => :delete, :data => { :confirm => 'Вы увурены?' } do %>
+      <%= icon 'trash-o'%>
+    <% end %>
+  </div>
+  <div class='user'>
+    <%= permission.user %>,
+    <%= permission.role_text %>,
+    <%= mail_to permission.user.email %>
+  </div>
+</li>

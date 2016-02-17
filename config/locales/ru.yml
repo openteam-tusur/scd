@@ -1,0 +1,105 @@
+ru:
+
+  lang:
+    en: 'English version'
+    ru: 'Русская версия'
+
+  app:
+
+    title: '3-я международная школа-семинар «Фотоника нано- и микроструктур»'
+
+    abbr: 'ФНМС'
+    year: '2015'
+    place: 'Томск, Россия'
+    schedule: '7 – 11 сентября 2015 года'
+
+    registration_of_participants: 'Регистрация участников'
+
+    'yes': 'да'
+    'no': 'нет'
+
+    report:
+      title: 'Доклад'
+      add: 'Добавить доклад'
+      remove: 'Удалить'
+
+    annotation:
+      limit: 'Не более 300 символов'
+
+    attachment:
+      hint: 'В формате .doc или .rtf'
+
+    copyright:
+
+      pnms: 'ФНМС 2015, Томск'
+      tusur: 'Томский государственный университет систем управления и радиоэлектроники'
+
+  access:
+    not_authorized: 'Вы не авторизованы для доступа к этой странице.'
+
+  claim:
+    reports:
+      zero: 'Нет докладов'
+      one: '1 доклад'
+      few: '%{count} доклада'
+      many: '%{count} докладов'
+
+  role_names:
+    admin: 'Администратор'
+    manager: 'Менеджер'
+
+  recaptcha:
+    errors:
+      verification_failed: 'Текст с картинки введен неправильно'
+
+  views:
+    pagination:
+      first: "&laquo; Первая"
+      last: "Последняя &raquo;"
+      previous: "&lsaquo; Предыдущая"
+      next: "Следующая &rsaquo;"
+      truncate: "&hellip;"
+
+  activerecord:
+
+    models:
+      claim: 'Заявка на участие'
+      report: 'Доклад'
+
+    attributes:
+
+      claim:
+        surname: 'Фамилия'
+        name: 'Имя'
+        patronymic: 'Отчество'
+        email: 'E-mail'
+        birthdate: 'Дата рождения'
+        gender: 'Пол'
+        contact_phone: 'Номер контактного телефона'
+        work_phone: 'Номер рабочего телефона'
+        academic_degree: 'Учёная степень'
+        academic_degree_ru: 'Учёная степень'
+        academic_status: 'Учёное звание'
+        academic_status_ru: 'Учёное звание'
+        post: 'Должность'
+        organization_title: 'Полное название организации'
+        organization_abbr: 'Сокращённое название организации'
+        postcode: 'Почтовый индекс'
+        country_code: 'Страна'
+        country: 'Страна'
+        locality: 'Город'
+        reports: 'Список докладов'
+        term_accept: 'Я согласен на обработку и публикацию персональных данных'
+
+      report:
+        title: 'Название'
+        authors: 'Авторы'
+        kind: 'Тип'
+        kind_ru: 'Тип'
+        section: 'Секция'
+        annotation: 'Аннотация'
+        attachment: 'Файл с тезисами'
+
+      permission:
+        name: 'Ф.И.О.'
+        role: 'Роль'

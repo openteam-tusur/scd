@@ -1,0 +1,41 @@
+app:
+  domain:       .domain
+  secret:       SECRET
+  host:         HOST
+  url:          http://app.url
+
+profile:
+  url:          http://localhost:3001/
+  sign_in_url:  http://localhost:3001/users/sign_in
+  sign_out_url: http://localhost:3001/users/sign_out
+  users_url:    http://localhost:3001/users/search
+
+redis:
+  url:          'redis://127.0.0.1:6379/1'
+
+redis_user_connector:
+  url:          'redis://127.0.0.1:6379/3'
+
+session_store:
+  db:           '4'
+  key_prefix:   'session:'
+  host:         'localhost'
+  port:         '6379'
+
+cms:
+  url:          http://cms.url
+  site_slug:    SLUG
+
+storage:
+  url:          http://storage.url
+
+solr:
+  url:          http://solr.url/cores/app
+
+errors:
+  url:          http://errors.url
+  key:          KEY
+
+recaptcha:
+  private:      SECRET
+  public:       SECRET

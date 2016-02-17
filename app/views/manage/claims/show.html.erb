@@ -1,0 +1,80 @@
+<h1>Заявка на участие в конференции</h1>
+
+<p>
+  <strong>Дата создания заявки:</strong>
+  <%= I18n.l @claim.created_at %>
+</p>
+<p>
+  <strong>Автор:</strong>
+  <%= @claim.fullname %> (<%= @claim.gender.text.mb_chars.downcase %> пол)
+</p>
+<p>
+  <strong>Дата рождения:</strong>
+  <%= I18n.l @claim.birthdate %>
+</p>
+<p>
+  <strong>Контактный телефон:</strong>
+  <%= @claim.contact_phone %>
+</p>
+<p>
+  <strong>E-mail:</strong>
+  <%= mail_to @claim.email %>
+</p>
+<p>
+  <strong>Организация:</strong>
+  <%= @claim.organization_title %> (<%= @claim.organization_abbr %>)
+</p>
+<p>
+  <strong>Адрес:</strong>
+  <%= @claim.postcode %>,
+  <%= Country.find_country_by_alpha2(@claim.country).translation(I18n.locale.to_s) %>,
+  <%= @claim.locality %>
+</p>
+<p>
+  <strong>Учёная степень:</strong>
+  <%= @claim.academic_degree.text %>,
+  <strong>учёное звание:</strong>
+  <%= @claim.academic_status.text %>
+</p>
+<p>
+  <strong>Должность:</strong>
+  <%= @claim.post %>
+</p>
+<p>
+  <strong>Рабочий телефон:</strong>
+  <%= @claim.work_phone %>
+</p>
+
+<h2><%= I18n.t 'claim.reports', :count => @claim.reports.count %></h2>
+
+<ul class='reports'>
+  <% @claim.reports.each do |report| %>
+    <li>
+      <p>
+        <strong>Название:</strong>
+        <%= report.title %>
+      </p>
+      <p>
+        <strong>Авторы:</strong>
+        <%= report.authors %>
+      </p>
+      <p>
+        <strong>Тип:</strong>
+        <%= report.kind.text %>
+      </p>
+      <p>
+        <strong>Секция:</strong>
+        <%= report.section.text %>
+      </p>
+      <p><strong>Аннотация:</strong></p>
+      <%= simple_format report.annotation %>
+      <p>
+        <strong>Файл с тезисами:</strong>
+        <%= link_to report.attachment_file_name, report.attachment.url, :target => '_blank' %>
+      </p>
+    </li>
+  <% end %>
+</ul>
+<p>
+  <%= link_to 'Вернуться к списку заявок', manage_claims_path %>
+</p>

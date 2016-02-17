@@ -1,0 +1,41 @@
+en:
+  enumerize:
+    claim:
+      gender:
+        male: 'Male'
+        female: 'Female'
+      academic_degree:
+        none: 'none'
+        ph_d: 'ph.d'
+        professor: 'professor'
+      academic_degree_en:
+        none: 'none'
+        ph_d: 'ph.d'
+        professor: 'professor'
+      academic_status:
+        none: 'none'
+        doctor: 'doctor'
+        professor: 'professor'
+        academician: 'academician'
+      academic_status_en:
+        none: 'none'
+        doctor: 'doctor'
+        professor: 'professor'
+        academician: 'academician'
+    report:
+      section:
+        photonic_crystal_structure: 'Photon crystals and structures'
+        nonlinear_optical_material: 'Nonlinear optical materials'
+        nanoheterostructure: 'Nanoheterostructure и nanocomposites'
+        semi_conducting_microstructure: 'Semiconducting nano-and microstructures'
+        nanometer_system_measuring: 'Nanometrology and  measuring systems'
+        photonic_quantum_system_facility: 'Photon and  quantum systems and devices'
+        nano_biophoton: 'Nano-and biophotonics'
+      kind:
+        invited_lector: 'invited lector'
+        oral: 'oral'
+        poster: 'poster'
+      kind_en:
+        invited_lector: 'invited lector'
+        oral: 'oral'
+        poster: 'poster'

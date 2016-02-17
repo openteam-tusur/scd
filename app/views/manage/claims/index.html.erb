@@ -1,0 +1,28 @@
+<h1>Управление заявками</h1>
+
+<% if @claims.any? %>
+  <ul class='list claims'>
+    <% @claims.each do |claim| %>
+      <li class='list-item <%= cycle('odd', 'even') %>'>
+        <div class='user'>
+          <div>
+            <%= link_to claim.fullname, manage_claim_path(claim) %>,
+            <%= I18n.l claim.created_at %>
+          </div>
+          <div class='small'>
+            <%= claim.organization_title %> (<%= claim.organization_abbr %>),
+            <span class='nobr'><%= claim.work_phone %></span>
+          </div>
+          <div class='small'>
+            <%= claim.postcode %>,
+            <%= Country.find_country_by_alpha2(claim.country).translation(I18n.locale.to_s) %>,
+            <%= claim.locality %>
+          </div>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+  <%= paginate @claims %>
+<% else %>
+  <p>Нет информации</p>
+<% end %>

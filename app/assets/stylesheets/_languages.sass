@@ -1,0 +1,29 @@
+.content .languages
+  float: right
+  margin: 0 0 10px 10px
+
+  li
+    +inline-block
+    padding: 0
+    margin: 0
+
+    &:before
+      display: none
+
+    a
+      display: block
+      +clearfix
+      width: 16px
+      height: 16px
+      text-indent: 999em
+      +opacity(0.5)
+
+      &:hover
+        +opacity(0.8)
+
+      &.selected
+        +opacity(1)
+
+      @each $lang in ru, en
+        &.#{$lang}
+          background: transparent image_url('flag-#{$lang}.png') no-repeat center center

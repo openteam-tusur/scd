@@ -1,0 +1,93 @@
+en:
+
+  lang:
+    en: 'English version'
+    ru: 'Русская версия'
+
+  app:
+
+    title: 'Third International School-Seminar «Photonics of Nano-and Microstructures – 2015»'
+
+    abbr: 'PhNMS'
+    year: '2015'
+    place: 'Tomsk, Russia'
+    schedule: '7 – 11 September 2015'
+
+    registration_of_participants: 'Registration of participants'
+
+    'yes': 'yes'
+    'no': 'no'
+
+    report:
+      title: 'Report'
+      add: 'Add report'
+      remove: 'Remove'
+
+    annotation:
+      limit: 'No more than 300 characters'
+
+    attachment:
+      hint: 'In .doc or .rtf format'
+
+    copyright:
+
+      pnms: 'PhNMS-2015 (Tomsk)'
+      tusur: 'Tomsk State University of Control Systems and Radioelectronics'
+
+  access:
+    not_authorized: 'You are not authorized to access this page.'
+
+  role_names:
+    admin: 'Administrator'
+    manager: 'Manager'
+
+  recaptcha:
+    errors:
+      verification_failed: 'Word verification response is incorrect, please try again'
+
+  views:
+    pagination:
+      first: "&laquo; First"
+      last: "Last &raquo;"
+      previous: "&lsaquo; Prev"
+      next: "Next &rsaquo;"
+      truncate: "&hellip;"
+
+  activerecord:
+
+    models:
+      claim: 'Application form for participation'
+      report: 'Report'
+
+    attributes:
+
+      claim:
+        surname: 'Surname'
+        name: 'Name'
+        patronymic: 'Patronymic'
+        email: 'E-mail'
+        birthdate: 'Date of Birth'
+        gender: 'Gender'
+        contact_phone: 'Contact phone number'
+        work_phone: 'Work phone number'
+        academic_degree: 'Academic degree'
+        academic_degree_en: 'Academic degree'
+        academic_status: 'Academic status'
+        academic_status_en: 'Academic status'
+        post: 'Post'
+        organization_title: 'Full name of the organization'
+        organization_abbr: 'Short name of the organization'
+        postcode: 'Postcode'
+        country_code: 'Country'
+        country: 'Country'
+        locality: 'City'
+        term_accept: 'I agree to the processing and publication of personal data'
+
+      report:
+        title: 'Title'
+        authors: 'Authors'
+        kind: 'Kind'
+        kind_en: 'Kind'
+        section: 'Section'
+        annotation: 'Annotation'
+        attachment: 'Attachment'
