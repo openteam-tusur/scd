@@ -6,7 +6,6 @@
       First TUSUR Cosmologic Conference
     </title>
     <%= favicon_link_tag %>
-    <%= canonical_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <!--[if lt IE 9]>
@@ -18,23 +17,11 @@
     <%= javascript_include_tag 'stop_ie/application' %>
     <![endif]-->
     <%= csrf_meta_tags %>
-    <%= meta_tags %>
   </head>
   <body>
-    <div class='container'>
       <div class='content'>
         <%= yield %>
       </div>
-    </div>
-    <div class='footer'>
-      <p><%= t('app.copyright.pnms') %></p>
-      <p><%= t('app.copyright.tusur') %></p>
-      <% if Rails.env.development? %>
-        <div class='development'>
-          <%= link_to 'JSON from CMS', @link_to_json, :target => '_blank' %>
-        </div>
-      <% end %>
-    </div>
     <%= render 'yandex_metrika' if Rails.env.production? %>
   </body>
 </html>

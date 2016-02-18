@@ -42,6 +42,7 @@ group :default do
   gem 'sunspot_rails'
   gem 'uglifier'
   gem 'whenever',                     '~> 0.9.2'
+  gem 'slim-rails'
 end
 
 source 'https://rails-assets.org' do

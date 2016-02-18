@@ -1,34 +1,46 @@
-body
-  font-size: 14px
-  font-family: Verdana, Tahoma, sans-serif
-  line-height: 1.4
-  color: #002172
-  background: #fff image_url('body-bg.png') repeat-x left top
+html, body
+  width: 100%
 
-a
-  color: #0099e8
-  text-decoration: underline
+  .video-wrapper
+    position: absolute
+    top: 0
+    height: 80px
+    width: 100%
+    overflow: hidden
 
-  &:hover
-    color: #2ee8ff
-    text-decoration: underline
+    video
+      position: absolute
+      top: 0px
+      z-index: 100
 
-b, strong
-  font-weight: bold
+    .no-video-tag-support
+      position: absolute
+      top: 0px
+      z-index: 0
 
-i, em
-  font-style: italic
+    video, .no-video-tag-support
+      &.narrow
+        height: 100%
+      &.wide
+        width: 100%
 
-.hidden
-  display: none
+  .navigation
+    +display-flex
+    flex-wrap: nowrap
+    justify-content: space-around
+    width: 100%
+    position: absolute
+    z-index: 150
 
-.nobr
-  white-space: nowrap
+    .scd-label
+      background-color: white
+      height: 90px
+      width: 220px
+      text-align: center
+      font-size: 3em
+      text-transform: uppercase
 
-.floatl
-  float: left
-  margin: 0 10px 10px 0
-
-.floatr
-  float: right
-  margin: 0 0 10px 10px
+      p
+        +background(linear-gradient(#e89c32, #db7222))
+        +background-clip(text)
+        color: transparent

@@ -1,0 +1,24 @@
+.navigation
+  .scd-label
+    p
+      | scd 2016
+  = link_to("About Tomsk", "#")
+  = link_to("Participants", "#")
+
+.wrapper.video-wrapper.js-video-wrapper
+  img.no-video-tag-support.js-no-video-tag-support src='https://storage.tusur.ru/files/39096/1440-804/poster.jpg'
+  video [ 
+          id="video"
+          src = "https://storage.tusur.ru/files/39092/Download%20NASA%20space%20time-lapse%20clips-HD.mp4"
+          poster = "https://storage.tusur.ru/files/39096/1440-804/poster.jpg"
+          preload = "auto"
+          loop
+          muted
+         ]
+
+.wrapper.from-cms
+  = @content
+
+.wrapper.registration-form
+
+.wrapper.map
