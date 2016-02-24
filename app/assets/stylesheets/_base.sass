@@ -1,12 +1,21 @@
 html, body
   width: 100%
 
+  h3
+    color: #b71e1e
+    text-transform: uppercase
+    font-size: 1.3em
+    margin-bottom: 1.5em
+    margin-top: 2em
+
   .video-wrapper
     position: absolute
     top: 0
     height: 80px
     width: 100%
     overflow: hidden
+
+
 
     video
       position: absolute
@@ -25,22 +34,173 @@ html, body
         width: 100%
 
   .navigation
-    +display-flex
-    flex-wrap: nowrap
-    justify-content: space-around
+    +display-flex(flex)
+    +flex-wrap(nowrap)
+    +flex-direction(row)
+    +justify-content(space-around)
+    +align-items(flex-start)
     width: 100%
-    position: absolute
+    position: relative
     z-index: 150
 
-    .scd-label
-      background-color: white
-      height: 90px
-      width: 220px
-      text-align: center
-      font-size: 3em
-      text-transform: uppercase
+    .links
+      padding-top: 25px
 
-      p
-        +background(linear-gradient(#e89c32, #db7222))
-        +background-clip(text)
-        color: transparent
+      .nav-link
+        font-size: 1.8rem
+        color: white
+        font-family: Arial
+
+        &:nth-child(2)
+          padding-left: 40px
+
+
+    .scd-label
+      +align-self(flex-start)
+      margin-right: 40px
+
+  .header-wrapper
+    +display-flex(flex)
+    +flex-direction(column)
+    +justify-content(center)
+    position: relative
+    z-index: 200
+    color: white
+    text-transform: uppercase
+    font-family: Arial, Helvetica, sans-serif
+    text-align: center
+    .headers
+      position: relative
+      top: -100px
+
+      h2
+        font-weight: 100
+      h1
+        font-weight: 900
+
+      .btn
+        margin-top: 50px
+        span
+          border: 2px solid white
+          padding: 2px
+          border-radius: 2px
+
+  .general-information
+    margin-top: 1em
+
+
+  .conference-schedule
+    .nav-tabs
+      border: 0
+      position: relative
+      top: 1px
+
+      li
+        a
+          color: #333
+
+        &.active
+
+          a
+            color: black
+            border: 0
+            background-color: #f7f7f7
+            border-bottom: 0
+        &:hover
+          a
+            border-bottom: 0
+
+    .tab-content
+      padding: 20px 0
+      background-color: #f7f7f7
+      border-radius: 0 0 10px 10px
+
+      li
+        +display-flex(flex)
+        +flex-direction(row)
+        +justify-content(flex-start)
+        margin-top: 20px
+
+        img
+          min-width: 100px
+          max-width: 100px
+          height: 100px
+          border-radius: 50px
+          margin-left: 20px
+          +flex-grow(0)
+          +align-self(center)
+
+        .events
+          +flex-basis(90%)
+          +display-flex(flex)
+          +flex-direction(column)
+          +justify-content(center)
+          padding-left: 15px
+          background-color: white
+          margin: 0 20px
+          position: relative
+          border-radius: 10px
+
+          &:before
+            +transform(rotate(45deg))
+            content: ''
+            display: block
+            width: 10px
+            height: 10px
+            background-color: white
+            position: absolute
+            left: -5px
+            top: 50%
+
+          .timing
+            color: #b71e1e
+
+          .reporter
+            font-size: 0.8em
+            color: #888
+
+  .committee
+    .participants
+      +display-flex(flex)
+      +flex-direction(row)
+      +flex-wrap(wrap)
+      +justify-content(space-around)
+
+      .participant-block
+        display: block
+        text-align: center
+        padding: 15px 15px
+
+        img
+          border-radius: 50px
+          height: 100px
+          width: 100px
+          +filter(grayscale(100%))
+          transition: 1s
+          &:hover
+            +filter(grayscale(0%))
+
+
+        .small
+          font-size: 0.8em
+          color: #888
+
+  .grey
+    background-color: #f7f7f7
+    margin-bottom: 40px
+    padding-bottom: 25px
+
+    h3
+      color: black
+
+    ul
+      li
+        background: url('speaker-mark.png') no-repeat left top
+        padding: 0 0px 0 40px
+        list-style: none
+        margin-bottom: 5px
+
+  #map
+    height: 400px
+    width: 100%
+

@@ -11,4 +11,5 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w(
   html5.js
   respond.js
+  *.jpg
 )

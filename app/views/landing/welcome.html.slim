@@ -1,9 +1,21 @@
 .navigation
   .scd-label
-    p
-      | scd 2016
-  = link_to("About Tomsk", "#")
-  = link_to("Participants", "#")
+    = image_tag("scd_2016_logo")
+  .links
+    = link_to("About Tomsk",  "#", class: "nav-link")
+    = link_to("Participants", "#", class: "nav-link")
+
+.wrapper.header-wrapper
+  .headers
+    h2
+      |8-10 august 2016
+    h1
+      |First tusur cosmological conference
+    a.btn.btn-warning.btn-lg href='#'
+      |Register 
+      span.glyphicon.glyphicon-list
+
+
 
 .wrapper.video-wrapper.js-video-wrapper
   img.no-video-tag-support.js-no-video-tag-support src='https://storage.tusur.ru/files/39096/1440-804/poster.jpg'
@@ -14,11 +26,17 @@
           preload = "auto"
           loop
           muted
+          autoplay
+          controls
          ]
 
+
+
 .wrapper.from-cms
-  = @content
+  .container-fluid
+    = @content
 
 .wrapper.registration-form
 
-.wrapper.map
+
+div#map
