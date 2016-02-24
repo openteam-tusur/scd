@@ -1,0 +1,45 @@
+8 august:
+  - 
+    starts_at: '9.50'
+    ends_at: '10.00'
+    title: "Opening of conference"
+    reporter: "Rector V.V. Obukhov"
+    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
+
+  -
+    starts_at: '10.00'
+    ends_at:   '11.00'
+    title:     "Accelerating Cosmology from modified gravity"
+    reporter:  "S.D. Odintsov(TSPU and Autonomous University of Barcelona)"
+    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '11.00'
+    ends_at:   '13.00'
+    title:     "News from Minimal Dilatonic Gravity"
+    reporter:  "P. Fiziev (JINR Dubna ans Sofia University)"
+    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '13.00'
+    ends_at:   '14.00'
+    title:     "Lunch"
+    image:     'https://cdn4.iconfinder.com/data/icons/we-re-the-best/512/best-big-biggest-hamburger-cheeseburger-food-delicious-nice-good-deal-huge-service-customer-satisfaction-hungry-campaign-discount-meat-fresh-fast_food-restaurant-snack-dinner-lunch-brunch-taste-tasty-burger-juicy-volume-256.png'
+  -
+    starts_at: '14.00'
+    ends_at:   '15.00'
+    title:     "Cosmological application of f(R, G) gravity"
+    reporter:  "M. De Laurentis(Napies University)"
+    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+
+9 august:
+  - starts_at: '9.50'
+    ends_at: '10.00'
+    title: "Opening of conference"
+    reporter: "Rector V.V. Obukhov"
+    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
+
+10 august:
+  - starts_at: '9.50'
+    ends_at: '10.00'
+    title: "Opening of conference"
+    reporter: "Rector V.V. Obukhov"
+    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
