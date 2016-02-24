@@ -30,13 +30,15 @@
           controls
          ]
 
-
-
 .wrapper.from-cms
   .container-fluid
     = @content
 
-.wrapper.registration-form
+.wrapper.registration-form.container-fluid
+  = render 'claims/form'
+
+
+
 
 
 div#map
