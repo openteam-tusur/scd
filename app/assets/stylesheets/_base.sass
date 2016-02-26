@@ -58,14 +58,12 @@ html, body
       &.wide
         width: 100%
 
-
-
   .header-wrapper
     +display-flex(flex)
     +flex-direction(column)
-    +align-content(center)
-    // position: relative
-    z-index: 200
+    +justify-content(space-between)
+    position: relative
+    z-index: 125
     color: white
     text-transform: uppercase
     font-family: Arial, Helvetica, sans-serif
@@ -81,12 +79,24 @@ html, body
       width: 100%
       position: relative
       z-index: 150
+      flex-grow: 1.5
 
       .links
+        padding-top: 10px
+
         .nav-link
           font-size: 1.8rem
           color: white
           font-family: Arial
+          padding: 10px
+          text-transform: none
+          font-weight: 200
+          transition: 1s
+          text-decoration: none
+
+          &:hover
+            background-color: #ff9000
+
 
       .scd-label
         +align-self(flex-start)
@@ -95,21 +105,29 @@ html, body
     .headers
       +display-flex(flex)
       +flex-wrap(nowrap)
-      +flex-grow(5)
+      +flex-grow(2)
       +flex-direction(column)
-      +justify-content(space-around)
-      z-index: 500
+      +justify-content(flex-start)
+      z-index: 150
 
       h2
         font-weight: 100
+        margin-top: 20px
       h1
         font-weight: 900
 
-      .btn
-        margin-top: 50px
+      .register-button
+        margin-top: 40px
+        width: 200px
+        font-weight: 100
+        +align-self(center)
+
+
         span
           border: 2px solid white
-          padding: 2px
+          padding: 2px 2px 2px 2px
+          margin-left:  5px
+          font-size: .95em
           border-radius: 2px
 
   .general-information
@@ -254,6 +272,5 @@ html, body
       width: 60px
       height: 60px
       border-radius: 30px
-
-  body .header-wrapper
-    padding-top: 50px
+  body .content .wrapper.header-wrapper .headers
+    padding-top: 40px
