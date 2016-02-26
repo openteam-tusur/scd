@@ -7,10 +7,9 @@ class ClaimsController < ApplicationController
 
   def create
     @claim = Claim.new(params[:claim])
-    if @claim.save #&& #verify_recaptcha(model: @claim)
+    if verify_recaptcha(model: @claim) && @claim.save
       render partial: 'claim'
     else
-      puts @claim.errors.inspect
       render :new
     end
   end

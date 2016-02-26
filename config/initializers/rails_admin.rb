@@ -9,7 +9,14 @@ RailsAdmin.config do |config|
   # config.current_user_method(&:current_user)
 
   ## == Cancan ==
-  # config.authorize_with :cancan
+  #config.authorize_with :cancan
+  RailsAdmin.config do |config|
+    config.authorize_with do |controller|
+      unless current_user.try :admin?
+        current_user ? redirect_to(main_app.root_path): redirect_to(Settings['profile.sign_in_url'])
+      end
+    end
+  end
 
   ## == Pundit ==
   # config.authorize_with :pundit
@@ -28,7 +35,6 @@ RailsAdmin.config do |config|
     show
     edit
     delete
-    show_in_app
 
     ## With an audit adapter, you can add:
     # history_index

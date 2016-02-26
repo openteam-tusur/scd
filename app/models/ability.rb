@@ -3,12 +3,11 @@ class Ability
 
   def initialize(user)
 
+    raise current_user.inspect
     return unless user
 
     can :manage, :all if user.admin?
-
-    can :manage, [Claim, Report] if user.manager?
-
+    can :access, :rails_admin if user.admin?
     # Define abilities for the passed in user here. For example:
     #
     #   user ||= User.new # guest user (not logged in)
