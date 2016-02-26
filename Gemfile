@@ -13,6 +13,7 @@ group :default do
   gem 'jquery-rails'
   gem 'pg'
   gem 'protected_attributes'
+  gem 'non-stupid-digest-assets'
   gem 'rack-utf8_sanitizer'
   gem 'rails', '~> 4.2.5'
   gem 'recaptcha', :require => 'recaptcha/rails'
