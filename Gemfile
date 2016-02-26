@@ -10,7 +10,6 @@ group :default do
   gem 'compass-rails'
   gem 'email_validator'
   gem 'esp-commons'
-  gem 'font-awesome-rails'
   gem 'jquery-rails'
   gem 'pg'
   gem 'protected_attributes'
