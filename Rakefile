@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Pnms::Application.load_tasks
+Scd::Application.load_tasks
