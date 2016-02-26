@@ -1,1 +1,1 @@
-3-я Школа-семинар молодых учёных «Фотоника нано- и микроструктур»
+First tusur cosmological conference
