@@ -1,19 +1,20 @@
-.navigation
-  .scd-label
-    = image_tag("scd_2016_logo")
-  .links
-    = link_to("About Tomsk",  "#", class: "nav-link")
-    = link_to("Participants", "#", class: "nav-link")
-
 .wrapper.header-wrapper
+  .navigation
+    .scd-label.hidden-xs
+      = image_tag("scd_2016_logo")
+    .links
+      = link_to("About Tomsk",  "#", class: "nav-link")
+      = link_to("Participants", "#", class: "nav-link")
   .headers
-    h2
-      |8-10 august 2016
-    h1
-      |First tusur cosmological conference
-    a.btn.btn-warning.btn-lg href='#'
+    .hs
+      h2
+        |8-10 august 2016
+      h1
+        |First tusur cosmological conference
+    a.register-button.js-scrollable-link href='#form'
       |Register 
       span.glyphicon.glyphicon-list
+    .blank
 
 
 
@@ -34,11 +35,8 @@
   .container-fluid
     = @content
 
-.wrapper.registration-form.container-fluid
+.wrapper.registration-form.container-fluid#form
   = render 'claims/form'
-
-
-
 
 
 div#map

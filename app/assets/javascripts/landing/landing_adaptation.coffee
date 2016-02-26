@@ -31,7 +31,7 @@ $ ->
 
   resize_header = ->
     header.width wrapper.width()
-    header.height(wrapper.height() - $('.navigation').height())
+    header.height(wrapper.height())
 
   activate_tabs = ->
     $('.nav-tabs li').first().addClass('active')
@@ -40,24 +40,40 @@ $ ->
   activate_yandex_maps = ->
     ymaps.ready ->
       $map = $('#map')
-      console.log $map.first()
-      map = new (ymaps.Map) $map[0],
-        center: [56.487529, 84.948197]
-        zoom: 11
+      map = new ymaps.Map $map[0],
+        center: [56.474029, 84.949717]
+        zoom: 12
+        controls: []
+
+      placemark = new ymaps.Placemark [56.474029, 84.949717],
+        balloonContent: '<b>Tomsk State University of Control Systems and Radioelectronics</b>
+                        <br/>
+                        main building
+                        <br/>
+                        40 Lenina Prospect, Tomsk, Russia 634050',
+        preset: 'islands#icon'
+        iconColor: '#0095b6'
+      map.geoObjects.add placemark
+      placemark.balloon.open()
+
+
+
+  enable_scroll_to = ->
+    $('.js-scrollable-link').click ->
+      $(window).scrollTo($(this).attr('href'), 1000)
 
 
   #declared functions all together!
-  control = () ->
+  control = ->
     video_wrapper_size_control()
     $.map [video, image], (e) -> proportion_counter e
     $.map [video, image], (e) -> video_position_counter e
     resize_header()
 
-
-
   #callbacks
   $(document).ready () ->
     control()
+    enable_scroll_to()
     activate_tabs()
     activate_yandex_maps()
   $("video").ready  () -> control()

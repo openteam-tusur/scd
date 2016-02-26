@@ -26,3 +26,5 @@
 capybara-*.html
 pickle-email-*.html
 rerun.txt
+lib/generated_schedule.html
+lib/generated_committee.html

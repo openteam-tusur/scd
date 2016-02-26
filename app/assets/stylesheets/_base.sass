@@ -8,6 +8,31 @@ html, body
     margin-bottom: 1.5em
     margin-top: 2em
 
+  .register-button
+    display: inline-block
+    background-color: #ff9000
+    border: 0
+    font-weight: 200
+    color: white
+    transition: .1s
+    text-transform: uppercase
+    font-size: 1.2em
+    padding: 10px 30px
+    border-radius: 5px
+    +box-shadow(0px 2px 1px 0px rgba(0,0,0,0.5))
+    text-decoration: none
+
+
+    &:hover
+      color: white
+      background-color: #E8680C
+      outline: none
+      text-transform: uppercase
+
+    &:active
+      outline: none
+      +box-shadow(0 0 0 0 transparent)
+
   .video-wrapper
     position: absolute
     top: 0
@@ -33,45 +58,47 @@ html, body
       &.wide
         width: 100%
 
-  .navigation
-    +display-flex(flex)
-    +flex-wrap(nowrap)
-    +flex-direction(row)
-    +justify-content(space-around)
-    +align-items(flex-start)
-    width: 100%
-    position: relative
-    z-index: 150
 
-    .links
-      padding-top: 25px
-
-      .nav-link
-        font-size: 1.8rem
-        color: white
-        font-family: Arial
-
-        &:nth-child(2)
-          padding-left: 40px
-
-
-    .scd-label
-      +align-self(flex-start)
-      margin-right: 40px
 
   .header-wrapper
     +display-flex(flex)
     +flex-direction(column)
-    +justify-content(center)
-    position: relative
+    +align-content(center)
+    // position: relative
     z-index: 200
     color: white
     text-transform: uppercase
     font-family: Arial, Helvetica, sans-serif
     text-align: center
-    .headers
+
+    .navigation
+      +align-self(flex-start)
+      +display-flex(flex)
+      +flex-wrap(nowrap)
+      +flex-direction(row)
+      +justify-content(space-around)
+      +align-items(flex-start)
+      width: 100%
       position: relative
-      top: -100px
+      z-index: 150
+
+      .links
+        .nav-link
+          font-size: 1.8rem
+          color: white
+          font-family: Arial
+
+      .scd-label
+        +align-self(flex-start)
+        margin-right: 40px
+
+    .headers
+      +display-flex(flex)
+      +flex-wrap(nowrap)
+      +flex-grow(5)
+      +flex-direction(column)
+      +justify-content(space-around)
+      z-index: 500
 
       h2
         font-weight: 100
@@ -87,7 +114,6 @@ html, body
 
   .general-information
     margin-top: 1em
-
 
   .conference-schedule
     .nav-tabs
@@ -187,7 +213,7 @@ html, body
 
   .grey
     background-color: #f7f7f7
-    margin-bottom: 40px
+    margin-bottom: 0px
     padding-bottom: 25px
 
     h3
@@ -206,24 +232,28 @@ html, body
 
   .registration-form
     margin-bottom: 40px
+
     label
       font-weight: 300
 
+@media (max-width: $screen-xs-max)
+  body .conference-schedule .tab-content li .events:before
+    width: 0
 
-  .register-button
-    display: block
-    background-color: #ff9000
-    font-weight: 200
-    color: white
-    transition: 1s
+  body .conference-schedule .tab-content li .events
+    padding-bottom: 5px
 
-    +box-shadow(0px 2px 1px 0px rgba(0,0,0,0.5))
+  body .committee .participants .participant-block 
+    padding: 0px
+    margin: 0px
+    p
+      width: 70px
+      font-size: 0.9em
 
-    &:hover
-      color: white
-      background-color: #E8680C
-      outline: none
+    img
+      width: 60px
+      height: 60px
+      border-radius: 30px
 
-    &:active
-      background-color: #FF4F0D
-      outline: none
+  body .header-wrapper
+    padding-top: 50px

@@ -56,7 +56,7 @@ private
     r = ''
     events.each do |event|
       res = ''
-      res << image_tag(event["image"].gsub(/\/\d+-\d+\//, '/100-100!mn/'), class: "rounded", alt: event["title"])
+      res << image_tag(event["image"].gsub(/\/\d+-\d+\//, '/100-100!mn/'), class: "rounded hidden-xs", alt: event["title"])
       res << "<div class='events'>"
       res << content_tag(:h4, "#{event["starts_at"]} - #{event["ends_at"]}", class: "timing")
       res << '<div class="title">'

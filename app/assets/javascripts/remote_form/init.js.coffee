@@ -10,9 +10,12 @@ $ ->
         url: form.attr('action')
         data: data
         success: (data, status, jqXHR) ->
-          console.log data
-          form.parent().html(data)
-          set_callback()
+          p =  form.parent()
+          p.animate {opacity: 0}, 250, ->
+            p.html(data)
+            p.animate opacity: 1, 250
+            set_callback()
+            return
           return
       return false
   set_callback()
