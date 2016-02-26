@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root :to => 'landing#welcome'
-  resources :claims, only: :create
+  resources :claims, only: [:new, :create]
 end

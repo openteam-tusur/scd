@@ -18,5 +18,20 @@ $ ->
             return
           return
       return false
+    if $('#form_again').length
+      link = $('#form_again')
+      link.click ->
+        $.ajax
+          type: 'GET'
+          url: link.data('url')
+          success: (data,status) -> 
+            p = link.parent()
+            p.animate {opacity: 0}, 250, ->
+              p.html(data)
+              p.animate opacity: 1, 250
+              set_callback()
+              return
+            return
+        return
   set_callback()
   return
