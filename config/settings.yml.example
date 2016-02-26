@@ -29,9 +29,6 @@ cms:
 storage:
   url:          http://storage.url
 
-solr:
-  url:          http://solr.url/cores/app
-
 errors:
   url:          http://errors.url
   key:          KEY

@@ -17,27 +17,27 @@ ActiveRecord::Schema.define(version: 20160224053115) do
   enable_extension "plpgsql"
 
   create_table "claims", force: :cascade do |t|
-    t.string   "surname",            limit: 255
-    t.string   "name",               limit: 255
-    t.string   "patronymic",         limit: 255
-    t.string   "email",              limit: 255
+    t.string   "surname"
+    t.string   "name"
+    t.string   "patronymic"
+    t.string   "email"
     t.date     "birthdate"
-    t.string   "gender",             limit: 255
-    t.string   "contact_phone",      limit: 255
-    t.string   "work_phone",         limit: 255
-    t.string   "academic_degree",    limit: 255
-    t.string   "academic_status",    limit: 255
-    t.string   "post",               limit: 255
+    t.string   "gender"
+    t.string   "contact_phone"
+    t.string   "work_phone"
+    t.string   "academic_degree"
+    t.string   "academic_status"
+    t.string   "post"
     t.text     "organization_title"
-    t.string   "organization_abbr",  limit: 255
-    t.string   "postcode",           limit: 255
-    t.string   "country",            limit: 255
-    t.string   "region",             limit: 255
-    t.string   "district",           limit: 255
-    t.string   "locality",           limit: 255
-    t.string   "street",             limit: 255
-    t.string   "house",              limit: 255
-    t.string   "building",           limit: 255
+    t.string   "organization_abbr"
+    t.string   "postcode"
+    t.string   "country"
+    t.string   "region"
+    t.string   "district"
+    t.string   "locality"
+    t.string   "street"
+    t.string   "house"
+    t.string   "building"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "working_address"
@@ -46,9 +46,9 @@ ActiveRecord::Schema.define(version: 20160224053115) do
 
   create_table "permissions", force: :cascade do |t|
     t.integer  "context_id"
-    t.string   "context_type", limit: 255
-    t.string   "role",         limit: 255
-    t.string   "user_id",      limit: 255
+    t.string   "context_type"
+    t.string   "role"
+    t.string   "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -58,17 +58,12 @@ ActiveRecord::Schema.define(version: 20160224053115) do
   create_table "reports", force: :cascade do |t|
     t.text     "title"
     t.text     "authors"
-    t.string   "kind",                    limit: 255
-    t.string   "section",                 limit: 255
+    t.string   "kind"
+    t.string   "section"
     t.text     "annotation"
     t.integer  "claim_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "attachment_file_name",    limit: 255
-    t.string   "attachment_content_type", limit: 255
-    t.integer  "attachment_file_size"
-    t.datetime "attachment_updated_at"
-    t.text     "attachment_url"
   end
 
 end
