@@ -17,15 +17,6 @@ class Permission < ActiveRecord::Base
     20
   end
 
-  searchable do
-    string :role
-    string :user_fullname
-    text :role_text
-    text :user_email
-    text :user_fullname_ru, :using => :user_fullname
-    text :user_id
-  end
-
   def role_text
     I18n.t("role_names.#{role}", :title => '').strip
   end

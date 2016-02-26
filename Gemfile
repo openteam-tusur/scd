@@ -16,6 +16,7 @@ group :default do
   gem 'non-stupid-digest-assets'
   gem 'rack-utf8_sanitizer'
   gem 'rails', '~> 4.2.5'
+  gem 'rails_admin'
   gem 'recaptcha', :require => 'recaptcha/rails'
   gem 'redis-session-store'
   gem 'rest-client'

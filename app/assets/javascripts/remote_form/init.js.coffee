@@ -25,7 +25,8 @@ $ ->
           type: 'GET'
           url: link.data('url')
           success: (data,status) -> 
-            p = link.parent()
+            p = link.closest('.registration-form')
+            console.log p
             p.animate {opacity: 0}, 250, ->
               p.html(data)
               p.animate opacity: 1, 250

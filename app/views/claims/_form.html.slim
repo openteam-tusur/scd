@@ -28,6 +28,6 @@
         = f.input :title_of_report
     .row
       .col-sm-6.col-xs-12
-        = recaptcha_tags
-      .col-sm-6.col-xs-12.text-right
+        = recaptcha_tags(stoken: false, size: 100, noscript: false, display: 'blackglass')
+      .col-sm-6.col-xs-12
         = f.submit  class: 'register-button'

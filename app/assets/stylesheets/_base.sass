@@ -247,12 +247,27 @@ html, body
   #map
     height: 400px
     width: 100%
+    border-top: 1px solid #ddd
 
   .registration-form
     margin-bottom: 40px
 
+    h3
+      color: #363636
+
     label
       font-weight: 300
+
+    .register-button
+      margin-top: 30px
+      float: right
+
+  .congratulations
+    height: 400px
+    +display-flex(flex)
+    +flex-direction(column)
+    +justify-content(space-between)
+
 
 @media (max-width: $screen-xs-max)
   body .conference-schedule .tab-content li .events:before
@@ -272,5 +287,10 @@ html, body
       width: 60px
       height: 60px
       border-radius: 30px
+
   body .content .wrapper.header-wrapper .headers
     padding-top: 40px
+
+  body .registration-form .register-button
+    margin-top: 10px
+    float: left
