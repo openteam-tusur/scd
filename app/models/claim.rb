@@ -13,15 +13,8 @@ class Claim < ActiveRecord::Base
   validates :email, :email => true
 
 
-  extend Enumerize
-  enumerize :academic_degree, :in => [:none, :kfmn, :ktn, :khn, :dfmn, :dtn, :dhn, :ph_d, :professor]
-  enumerize :academic_status, :in => [:none, :sns, :docent, :professor, :doctor, :academician]
-
   has_many :reports, :dependent => :destroy
 
-  searchable do
-    time :created_at
-  end
 
   def fullname
     [name, surname].compact.join(' ')
