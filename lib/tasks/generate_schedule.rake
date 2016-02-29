@@ -1,5 +1,4 @@
 include ActionView::Helpers::TagHelper
-include ActionView::Helpers::AssetTagHelper
 
 desc "generates html file for using in schedule static page from schedule.yml"
 task :generate_schedule => :environment do
@@ -30,6 +29,8 @@ end
 
 desc "generate comittee html"
 task :generate_committee => :environment do
+  include ActionView::Helpers::AssetTagHelper
+
   f = File.open("lib/committee.yml")
   committee = YAML.load f
   f.close
@@ -53,6 +54,8 @@ end
 
 private
   def content_for_date(events)
+    include ActionView::Helpers::AssetTagHelper
+
     r = ''
     events.each do |event|
       res = ''

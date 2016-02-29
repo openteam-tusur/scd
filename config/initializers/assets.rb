@@ -12,8 +12,3 @@ Rails.application.config.assets.precompile += %w[
   html5.js
   respond.js
 ]
-
-Rails.application.config.assets.context_class.class_eval do
-  def asset_path(path, options = {})
-  end
-end
