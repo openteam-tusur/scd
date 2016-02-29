@@ -15,19 +15,18 @@
       |Register
       span.glyphicon.glyphicon-list
 
-
-
 .wrapper.video-wrapper.js-video-wrapper
   img.no-video-tag-support.js-no-video-tag-support src='https://storage.tusur.ru/files/39096/1440-804/poster.jpg'
   video [
           id="video"
-          src = "https://storage.tusur.ru/files/39092/Download%20NASA%20space%20time-lapse%20clips-HD.mp4"
           poster = "https://storage.tusur.ru/files/39096/1440-804/poster.jpg"
           preload = "auto"
           loop
-          muted
           autoplay
          ]
+    source src="/NASA-space-time-lapse-clips-HD.ogv" type='video/ogg; codecs="theora, vorbis"'
+    source src="/NASA-space-time-lapse-clips-HD.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+    source src="/NASA-space-time-lapse-clips-HD.webm" type='video/webm; codecs="vp8, vorbis"'
 
 .wrapper.from-cms
   .container-fluid
