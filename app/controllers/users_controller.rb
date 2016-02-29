@@ -1,6 +1,6 @@
 require 'open-uri'
 
-class UsersController < CommonController
+class UsersController < ApplicationController
   authorize_resource
 
   def current_ability
