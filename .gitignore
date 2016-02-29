@@ -14,6 +14,8 @@
 /config/settings.yml
 /coverage/
 /db/*.sqlite3
+/lib/generated_committee.html
+/lib/generated_schedule.html
 /log/*
 /public/assets/*
 /public/sitemap*
@@ -26,5 +28,3 @@
 capybara-*.html
 pickle-email-*.html
 rerun.txt
-lib/generated_schedule.html
-lib/generated_committee.html
