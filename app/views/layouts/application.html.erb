@@ -22,9 +22,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-      <div class='content'>
-        <%= yield %>
-      </div>
+    <div class='content'>
+      <%= yield %>
+    </div>
     <%= render 'yandex_metrika' if Rails.env.production? %>
   </body>
 </html>
