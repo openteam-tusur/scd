@@ -15,6 +15,5 @@ Rails.application.config.assets.precompile += %w[
 
 Rails.application.config.assets.context_class.class_eval do
   def asset_path(path, options = {})
-    "/assets/#{path}"
   end
 end
