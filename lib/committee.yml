@@ -1,5 +1,6 @@
  participants:
   - participant: 'Prof. E. Alvarez (Madrid,Spain)'
+    image:       'https://storage.tusur.ru/files/39255/100-100/e_alvarez.jpeg'
   - participant: 'Prof. A. Balakin (Kazan, Russia)'
     image: 'https://storage.tusur.ru/files/39142/312-312/balakin_kazan'
   - participant: 'Prof. R. Brandenberger (Montreal, Canada)'
@@ -18,6 +19,7 @@
     image: "https://storage.tusur.ru/files/39135/506-716/RobertMann.jpg"
   - participant: 'Prof. V. N. Melnikov (Moscow, Russia)'
   - participant: 'Prof. S. P. Miao (Tainan, Taiwan)'
+    image: 'https://storage.tusur.ru/files/39258/193-193/S.%20Miao.jpg'
   - participant: 'Prof. V. Mukhanov (Munich, Germany)'
     image: 'https://storage.tusur.ru/files/39149/1024-681/SlavaMukhanov.jpg'
   - participant: 'Prof. S. Nojiri (Nagoya, Japan)'
@@ -25,10 +27,12 @@
   - participant: 'Prof. V.V. Obukhov (Tomsk, Russia)'
     image: 'https://storage.tusur.ru/files/39151/150-192/obukhov.png'
   - participant: 'Prof. M. Sasaki (Kyoto, Japan)'
+    image:       'https://storage.tusur.ru/files/39257/459-399/misao_sasaki.jpg'
   - participant: 'Prof. A.A. Shelupanov (Tomsk, Russia)'
     image:       'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
   - participant: 'Prof. S. Sushkov (Kazan, Russia)'
+    image:       'https://storage.tusur.ru/files/39259/213-227/sushkov.png'
   - participant: 'Prof. R. Woodard (Florida, USA)'
-    image:       'https://storage.tusur.ru/files/39152/165-207/woodard.jpg'
+    image:       'https://storage.tusur.ru/files/39256/148-149/woodard_.jpg'
   - participant: 'Prof. A. Yurov (Kaliningrad, Russia)'
     image:       'https://storage.tusur.ru/files/39153/1148-631/yurov.jpg'
