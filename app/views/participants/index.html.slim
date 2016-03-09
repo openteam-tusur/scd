@@ -4,14 +4,14 @@
       = image_tag("scd_2016_logo.jpg")
     .links
       /= link_to("About Tomsk",  "#", class: "nav-link")
-      = link_to("Participants", "#{participants_path}", class: "nav-link")
+      /= link_to("Participants", "#", class: "nav-link")
 
   .headers
     h2
       |8-10 august 2016
     h1
       |First tusur cosmological conference
-    a.register-button.js-scrollable-link href='#form'
+    a.register-button.js-scrollable-link href="#{root_path}#form"
       |Register
       span.glyphicon.glyphicon-list
 
@@ -28,23 +28,19 @@
     <source src="/NASA-space-time-lapse-clips-HD.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'/>
     <source src="/NASA-space-time-lapse-clips-HD.webm" type='video/webm; codecs="vp8, vorbis"'>
 
-.wrapper.from-cms
-  .container-fluid
-    = @content
-
-.wrapper.sponsors
+.wrapper.participants
   .row.text-left
     .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
-      h3
-        | Two best talks will be recommended for publication in Symmetry:
-      a  href='http://www.mdpi.com/journal/symmetry' class='symmetry-link'
-        |http://www.mdpi.com/journal/symmetry
-    .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
-      h3
-        | Sponsors:
-        = image_tag 'tusur.jpg', class: 'tusur'
-.wrapper.registration-form.container-fluid#form
-  = render 'claims/form'
+      h3 Participants
+      ul class='participants-list'
+        -@participants.each do |p|
+          li
+            .wrap
+              strong
+                = ["#{p.name} #{p.surname}",p.academic_status ].compact.join(", ")
+                = " - #{p.title_of_report}" if p.title_of_report.present?
+              small
+                br
+                = p.post + ', ' if p.post.present?
+                = "#{p.organization_title}"   if p.organization_title.present?
 
-
-div#map

@@ -283,6 +283,34 @@ html, body
       bottom: 4px
       margin-left: 15px
 
+  .participants
+    ul
+      list-style-type: none
+
+      li
+        margin-top: 10px
+        position: relative
+        .wrap
+          strong
+            font-size: 1.2em
+            font-weight: 400
+          small
+            color: #999
+            margin-top: 0px
+            position: relative
+            left: 2px
+
+        &:before
+          content: '- '
+          display: inline-block
+          width: 1em
+          font-size: 1.5em
+          color: red
+          position: absolute
+          top: -5px
+          left: -15px
+
+
 @media (max-width: $screen-xs-max)
   body .conference-schedule .tab-content li .events:before
     width: 0
