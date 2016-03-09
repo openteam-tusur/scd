@@ -1,10 +1,10 @@
 .wrapper.header-wrapper
   .navigation
     .scd-label.hidden-xs
-      = image_tag("scd_2016_logo.jpg")
+      = link_to image_tag("scd_2016_logo.jpg"), root_path
     .links
       /= link_to("About Tomsk",  "#", class: "nav-link")
-      /= link_to("Participants", "#", class: "nav-link")
+      = link_to "Home", root_path, class: "nav-link"
 
   .headers
     h2
@@ -43,4 +43,3 @@
                 br
                 = p.post + ', ' if p.post.present?
                 = "#{p.organization_title}"   if p.organization_title.present?
-
