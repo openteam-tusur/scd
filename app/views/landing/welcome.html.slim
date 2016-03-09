@@ -32,7 +32,7 @@
   .container-fluid
     = @content
 
-.wrapper.sponsors
+.wrapper.sponsors.container-fluid
   .row.text-left
     .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
       h3
@@ -42,7 +42,8 @@
     .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
       h3
         | Sponsors:
-        = image_tag 'tusur.jpg', class: 'tusur'
+        = link_to image_tag('tusur.jpg', class: 'tusur'), "http://tusur.ru/"
+
 .wrapper.registration-form.container-fluid#form
   = render 'claims/form'
 
