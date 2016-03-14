@@ -9,7 +9,11 @@
     </title>
     <%= favicon_link_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
-    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <% if I18n.locale == :ru  %>
+      <script src='//api-maps.yandex.ru/2.1/?lang=ru-RU' type='text/javascript'></script>
+    <% else %>
+      <script src='//api-maps.yandex.ru/2.1/?lang=en-US' type='text/javascript'></script>
+    <% end %>
     <%= javascript_include_tag 'application' %>
     <!--[if lt IE 9]>
     <%= javascript_include_tag 'html5.js' %>
