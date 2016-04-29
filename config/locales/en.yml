@@ -21,3 +21,6 @@
 
 en:
   hello: "Hello world"
+
+  app:
+    title: "scd 2016"
