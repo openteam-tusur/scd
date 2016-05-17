@@ -43,3 +43,8 @@
                 br
                 = p.post + ', ' if p.post.present?
                 = "#{p.organization_title}"   if p.organization_title.present?
+                br
+                a href="mailto:#{p.email}"
+                  = p.email
+                br
+                = arrival_and_departure(p)

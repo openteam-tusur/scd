@@ -1,23 +1,41 @@
 class Claim < ActiveRecord::Base
+  extend Enumerize
+
+  TIME_FORMAT = "%m/%d/%Y %H:%M %p"
+
+  def self.time_format
+    TIME_FORMAT
+  end
+
+  TRANSPORT_OPTIONS = [:car, :train, :plane]
 
   attr_accessible :surname, :name,
                   :email, :academic_status,
-                  :post, :organization_title, 
-                  :working_address, :title_of_report
+                  :post, :organization_title,
+                  :working_address, :title_of_report,
+                  :departure_time, :arrival_time,
+                  :departure_transport, :arrival_transport,
+                  :already_in_tomsk
 
   validates_presence_of :surname, :name, :email, :post, :academic_status
 
   normalize_attributes :surname, :name, :patronymic,
-    :email, :academic_degree, :academic_status, :post, :organization_title
+                       :email, :academic_degree, :academic_status,
+                       :post, :organization_title
 
-  validates :email, :email => true
+  validates :email, email: true
 
+  enumerize :departure_transport, in: TRANSPORT_OPTIONS
+  enumerize :arrival_transport,   in: TRANSPORT_OPTIONS
 
-  has_many :reports, :dependent => :destroy
 
 
   def fullname
     [name, surname].compact.join(' ')
+  end
+
+  def already_in_tomsk?
+    already_in_tomsk
   end
 
 end

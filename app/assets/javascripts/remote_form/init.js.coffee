@@ -15,6 +15,8 @@ $ ->
             p.html(data)
             p.animate opacity: 1, 250
             set_callback()
+            init_datetime_picker()
+            smart_checkbox()
             return
           return
       return false
@@ -24,15 +26,31 @@ $ ->
         $.ajax
           type: 'GET'
           url: link.data('url')
-          success: (data,status) -> 
+          success: (data,status) ->
             p = link.closest('.registration-form')
-            console.log p
             p.animate {opacity: 0}, 250, ->
               p.html(data)
               p.animate opacity: 1, 250
               set_callback()
-              return
-            return
-        return
+              init_datetime_picker()
+              smart_checkbox()
+
   set_callback()
+  init_datetime_picker()
+  smart_checkbox()
   return
+
+init_datetime_picker = ->
+  console.log 'datetime'
+  $('.datetime-picker').datetimepicker()
+
+smart_checkbox = ->
+  console.log 'smart checkbox'
+  checkbox = $('#claim_already_in_tomsk')
+  checkbox.change ()->
+    if $(this).is(':checked')
+      $('.arrival').slideUp()
+      $('.departure').slideUp()
+    else
+      $('.arrival').slideDown()
+      $('.departure').slideDown()

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160224053115) do
+ActiveRecord::Schema.define(version: 20160517033232) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,27 +21,20 @@ ActiveRecord::Schema.define(version: 20160224053115) do
     t.string   "name"
     t.string   "patronymic"
     t.string   "email"
-    t.date     "birthdate"
-    t.string   "gender"
-    t.string   "contact_phone"
-    t.string   "work_phone"
     t.string   "academic_degree"
     t.string   "academic_status"
     t.string   "post"
     t.text     "organization_title"
     t.string   "organization_abbr"
-    t.string   "postcode"
-    t.string   "country"
-    t.string   "region"
-    t.string   "district"
-    t.string   "locality"
-    t.string   "street"
-    t.string   "house"
-    t.string   "building"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "working_address"
     t.string   "title_of_report"
+    t.datetime "arrival_time"
+    t.string   "arrival_transport"
+    t.datetime "departure_time"
+    t.string   "departure_transport"
+    t.boolean  "already_in_tomsk"
   end
 
   create_table "permissions", force: :cascade do |t|

@@ -26,6 +26,19 @@
     .row
       .col-xs-12
         = f.input :title_of_report
+    .row.arrival
+      .col-sm-6.col-xs-12
+        = f.input :arrival_time,   as: :string, input_html: { class: 'datetime-picker', value: l(Time.now, format: Claim.time_format) }
+      .col-sm-6.col-xs-12
+        = f.input :arrival_transport
+    .row.departure
+      .col-sm-6.col-xs-12
+        = f.input :departure_time, as: :string, input_html: { class: 'datetime-picker', value: l(Time.now, format: Claim.time_format) }
+      .col-sm-6.col-xs-12
+        = f.input :departure_transport
+    .row.in-tomsk-already
+      .col-xs-12
+        = f.input :already_in_tomsk, input_html: { class: 'already-in-tomsk' }, label: 'I live in Tomsk'
     .row
       .col-sm-6.col-xs-12
         = recaptcha_tags(hl: I18n.locale, stoken: false, size: 100, noscript: false, display: 'blackglass')
