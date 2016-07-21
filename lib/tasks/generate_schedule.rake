@@ -15,10 +15,13 @@ task :generate_schedule => :environment do
                                 role: "presentation")
   end
 
-  result << content_tag(:ul, nav.join().html_safe, class: "nav nav-tabs", 'role' => 'tablist')
+  result << content_tag(:ul, nav.join.html_safe, class: "nav nav-tabs", 'role' => 'tablist')
 
   tab_panes = schedule.map do |date, list_of_events|
-    content_tag :div, content_for_date(list_of_events).html_safe, id: date.underscore.parameterize("_"), role: 'tabpanel', class: "tab-pane fade"
+    content_tag :div, content_for_date(list_of_events).html_safe,
+                      id: date.underscore.parameterize("_"),
+                      role: 'tabpanel',
+                      class: "tab-pane fade"
   end
   result << content_tag(:div, tab_panes.join().html_safe, class: "tab-content")
   html = File.open("lib/generated_schedule.html", 'w')
@@ -59,14 +62,22 @@ private
     r = ''
     events.each do |event|
       res = ''
-      res << image_tag(event["image"].gsub(/\/\d+-\d+\//, '/100-100!mn/'), class: "rounded hidden-xs", alt: event["title"])
-      res << "<div class='events'>"
-      res << content_tag(:h4, "#{event["starts_at"]} - #{event["ends_at"]}", class: "timing")
-      res << '<div class="title">'
-      res << content_tag(:span, event["title"], class: "title")
-      res << content_tag(:span, " - #{ event["reporter"]}", class: 'reporter') if event['reporter']
-      res << ("</div>" * 2)
-      r << content_tag(:li, res.html_safe)
+      if event['part'].present?
+        res << "<div class='events part'>"
+        res << content_tag(:h3, event['title']) if event['title']
+        res << '<div class="title">'
+        res << content_tag(:span, "Chairman: #{event['chairman']}", class: "title")
+        res << ("</div>" * 2)
+      else
+        res << image_tag(event["image"].gsub(/\/\d+-\d+\//, '/100-100!mn/'), class: "rounded hidden-xs", alt: event["title"])
+        res << "<div class='events event'>"
+        res << content_tag(:h4, "#{event["starts_at"]} - #{event["ends_at"]}", class: "timing")
+        res << '<div class="title">'
+        res << content_tag(:span, event["title"], class: "title")
+        res << content_tag(:span, " - #{ event["reporter"]}", class: 'reporter') if event['reporter']
+        res << ("</div>" * 2)
+      end
+      r   << content_tag(:li, res.html_safe)
     end
     content_tag :ul, r.html_safe
   end

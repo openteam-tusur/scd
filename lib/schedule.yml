@@ -1,45 +1,136 @@
 8 august:
   -
+    starts_at: '9.00'
+    ends_at:   '9.30'
+    title:     "Registration"
+    image:     'https://storage.tusur.ru/files/48046/472-300!/02.jpg'
+  -
+    starts_at: '9.30'
+    ends_at:   '9.40'
+    title:     "Opening address"
+    image:     'https://storage.tusur.ru/files/48088/300-225/odintsov.jpg'
+    reporter:  'S. Odintsov(Barcelona)'
+  -
+    starts_at: '9.40'
+    ends_at:   '9.50'
+    title:     "Award ceremony - TUSUR cosmology diplom: TUSUR Rector A.Shelupanov(Tomsk), TUSUR Vice-Rector R.Mesheryakov"
+    image:     'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
+  -
+    part: true
+    title: 'Plenary Session:'
+    chairman: 'A.Makarenko'
+  -
     starts_at: '9.50'
-    ends_at: '10.00'
-    title: "Opening of conference"
-    reporter: "Rector V.V. Obukhov"
-    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
+    ends_at: '10.20'
+    title: "Hamiltonian dynamics and symmetries in extended gravity quantum cosmology"
+    reporter: "S.Capozziello (Napoli)"
+    image: 'https://storage.tusur.ru/files/39139/100-100/capozziello.jpg'
+  -
+    starts_at: '10.25'
+    ends_at: '10.55'
+    title: "General dynamical properties in a scalar field model with nonminimal kinetic coupling."
+    reporter: "S.Sushkov(Kazan)"
+    image: 'https://storage.tusur.ru/files/39259/213-227/sushkov.png'
+  -
+    starts_at: '11.00'
+    ends_at: '11.30'
+    title: "Approaching future cosmological singularities."
+    reporter: "D.Saez-Gomez (Barcelona)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '11.35'
+    ends_at: '12.05'
+    title: "f(R,G) cosmology: classical aspects."
+    reporter: "M. De Laurentis (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '12.10'
+    ends_at: '12.25'
+    title: "Coffee break"
+    image: 'https://storage.tusur.ru/files/48089/586-440/coffee.jpg'
+  -
+    part: true
+    chairman: "P. Fiziev, Sofia"
+  -
+    starts_at: '12.25'
+    ends_at: '12.55'
+    title: "Singular inflationary cosmology."
+    reporter: "V. Oikonomou (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '13.00'
+    ends_at: '15.00'
+    title: "Lunch"
+    image: 'https://storage.tusur.ru/files/48090/586-440/lunch.jpg'
 
+  -
+    part: true
+    title: 'Afternoon session'
+    chairman: 'S.Capozziello, Napoli'
+
+  -
+    starts_at: '15.00'
+    ends_at:   '15.20'
+    title: "Exact solutions in Einstein-Gauss-Bonnet gravitation with scalar fields"
+    reporter: "S.Chervon (Ulyanovsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '15.25'
+    ends_at:   '15.45'
+    title: "Varying ghost dark energy models in general relativity"
+    reporter: "M. Khurshudyan (Erevan)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '15.50'
+    ends_at:   '16.10'
+    title: "Massive charged scalars in a strong magnetic field"
+    reporter: "P. Kazinski (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.10'
+    ends_at:   '16.25'
+    title: "A model for particle-antiparticle creation system in early universe"
+    reporter: "H. Takata (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.25'
+    ends_at:   '16.40'
+    title: "Reconstruction of bouncing cosmological models in F(R) and F(G) gravity theories"
+    reporter: "A. Myagkii (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.40'
+    ends_at:   '16.55'
+    title: "Classification of Stackel spaces with dust in Einstein theory of gravity"
+    reporter: "A. Filippov (Tomsk)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.55'
+    ends_at:   '17.10'
+    title: "Perfect fluid dark matter."
+    reporter: "A.Potapov, G.Garipova (Ufa)"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '17.10'
+    ends_at:   '17.20'
+    title: "Analysis of the CMB fluctuations for gauged Nambu-Jona-Lasinio model"
+    reporter: "H.Sakamoto"
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+
+10 august:
   -
     starts_at: '10.00'
     ends_at:   '11.00'
-    title:     "Accelerating Cosmology from modified gravity"
-    reporter:  "S.D. Odintsov(TSPU and Autonomous University of Barcelona)"
-    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+    title: "Round table on modern cosmology problems"
+    reporter: "V. Oikonomou, S. Capozziello, M. De Laurentis."
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
   -
     starts_at: '11.00'
-    ends_at:   '13.00'
-    title:     "News from Minimal Dilatonic Gravity"
-    reporter:  "P. Fiziev (JINR Dubna ans Sofia University)"
-    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+    ends_at:   '11.10'
+    title: "Poster session. Closing of scientic part of conference."
+    image: 'https://storage.tusur.ru/files/48046/472-300!/02.jpg'
   -
-    starts_at: '13.00'
+    starts_at: '11.20'
     ends_at:   '14.00'
-    title:     "Lunch"
-    image:     'https://cdn4.iconfinder.com/data/icons/we-re-the-best/512/best-big-biggest-hamburger-cheeseburger-food-delicious-nice-good-deal-huge-service-customer-satisfaction-hungry-campaign-discount-meat-fresh-fast_food-restaurant-snack-dinner-lunch-brunch-taste-tasty-burger-juicy-volume-256.png'
-  -
-    starts_at: '14.00'
-    ends_at:   '15.00'
-    title:     "Cosmological application of f(R, G) gravity"
-    reporter:  "M. De Laurentis(Napies University)"
-    image:     'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
-
-9 august:
-  - starts_at: '9.50'
-    ends_at: '10.00'
-    title: "Opening of conference"
-    reporter: "Rector V.V. Obukhov"
-    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
-
-10 august:
-  - starts_at: '9.50'
-    ends_at: '10.00'
-    title: "Opening of conference"
-    reporter: "Rector V.V. Obukhov"
-    image: 'https://storage.tusur.ru/files/37550/240-240/shelupanov-03.jpg'
+    title: "Social event. Visits:Tomsk culture/history museem. Tomsk Mediuval Wooden Tower"
+    image: 'https://storage.tusur.ru/files/48095/600-304/tomsk-wood.jpg'
