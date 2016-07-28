@@ -41,16 +41,22 @@ $ ->
     ymaps.ready ->
       $map = $('#map')
       map = new ymaps.Map $map[0],
-        center: [56.474029, 84.949717]
+        center: [56.472019, 84.953400]
         zoom: 12
         controls: []
 
-      placemark = new ymaps.Placemark [56.474029, 84.949717],
-        balloonContent: '<b>Tomsk State University of Control Systems and Radioelectronics</b>
+      placemark = new ymaps.Placemark [56.472518, 84.953003],
+        balloonContent:'
+                        <small> Venue: </small>
                         <br/>
-                        main building
-                        <br/>
-                        40 Lenina Prospect, Tomsk, Russia 634050',
+                        <strong>
+                          House of Scientists
+                          <br/>
+                          of TUSUR University
+                          <br/>
+                        </strong>
+                        45 Sovetskaya street, Tomsk, Russia
+                        ',
         preset: 'islands#icon'
         iconColor: '#0095b6'
       map.geoObjects.add placemark

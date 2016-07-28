@@ -117,6 +117,112 @@
     reporter: "H.Sakamoto"
     image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
 
+9 august:
+  -
+    part: true
+    title: 'Plenary Session:'
+    chairman: 'M. De Laurentis.'
+  -
+    starts_at: '10.00'
+    ends_at:   '10.30'
+    title:     'Unified accelerating cosmology from modified gravity: new theories.'
+    image:     'https://storage.tusur.ru/files/48088/300-225/odintsov.jpg'
+    reporter:  'S. Odintsov(Barcelona)'
+  -
+    starts_at: '10.35'
+    ends_at:   '11.05'
+    title:     'Fab4 neutron stars'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+    reporter:  'A. Maselli (Tuebingen)'
+  -
+    starts_at: '11.10'
+    ends_at:   '11.40'
+    title:     'Quasinormal modes in GW150914'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+    reporter:  'P. Fiziev (Sofia)'
+  -
+    starts_at: '11.45'
+    ends_at: '12.05'
+    title: 'Thermodynamics of Antievaporating black holes in Extended theories of gravity'
+    reporter: 'A. Addazi (Gran Sasso)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '12.05'
+    ends_at: '12.20'
+    title: "Coffee break"
+    image: 'https://storage.tusur.ru/files/48089/586-440/coffee.jpg'
+  -
+    part: true
+    chairman: 'P. Kazinski.'
+  -
+    starts_at: '12.20'
+    ends_at: '12.40'
+    title: 'Dark matter decomposition in lens galaxies using Weyl theory'
+    reporter: 'K. Nandi (Ufa)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '12.45'
+    ends_at: '13.05'
+    title: 'Relativistic Stars in dRGT Massive Gravity.'
+    reporter: 'T. Katsuragawa(Nagoya)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '13.00'
+    ends_at: '15.00'
+    title: "Lunch"
+    image: 'https://storage.tusur.ru/files/48090/586-440/lunch.jpg'
+  -
+    part: true
+    title: 'Afternoon session.'
+    chairman: 'S. Chervon.'
+  -
+    starts_at: '15.00'
+    ends_at: '15.20'
+    title: 'Stability in higher-derivative matter fields theories.'
+    reporter: 'P. Tretyakov (Dubna)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '15.25'
+    ends_at: '15.45'
+    title: 'Cosmological solutions in f(G,T) gravity.'
+    reporter: 'K. Dialektopoulos(Napoli)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '15.50'
+    ends_at:   '16.10'
+    title: 'Construct an f(T)-theory from a bouncing FRW universe.'
+    reporter: 'G. Nashed(Cairo)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.15'
+    ends_at:   '16.30'
+    title: 'Cosmological models coupled with dark matter in a dissipative universe.'
+    reporter: 'A.Timoshkin (Tomsk)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.30'
+    ends_at:   '16.45'
+    title: 'Quantization of massive and massles p-form models in curved d-dimensional space'
+    reporter: 'E. Kirillova(Tomsk)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '16.45'
+    ends_at:   '17.05'
+    title: 'Dynamical analysis of a cosmological scalar field model with a nonminimal kinetic coupling.'
+    reporter: 'J.Matsumoto (Kazan)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '17.05'
+    ends_at:   '17.20'
+    title: 'Bouncing cosmology in Gauss-Bonnet gravity.'
+    reporter: 'A.Makarenko (Tomsk)'
+    image: 'https://storage.tusur.ru/files/39133/1920-1200/microphone.jpg'
+  -
+    starts_at: '19.00'
+    ends_at: '22.00'
+    title: "Banquet"
+    image: 'https://storage.tusur.ru/files/48090/586-440/lunch.jpg'
+
 10 august:
   -
     starts_at: '10.00'
