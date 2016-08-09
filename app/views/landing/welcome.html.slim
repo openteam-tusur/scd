@@ -11,9 +11,6 @@
       |8-10 august 2016
     h1
       |First tusur cosmological conference
-    a.register-button.js-scrollable-link href='#form'
-      |Register
-      span.glyphicon.glyphicon-list
 
 .wrapper.video-wrapper.js-video-wrapper
   img.no-video-tag-support.js-no-video-tag-support src='https://storage.tusur.ru/files/39096/1440-804/poster.jpg'
@@ -31,21 +28,4 @@
 .wrapper.from-cms
   .container-fluid
     = @content
-
-.wrapper.sponsors.container-fluid
-  .row.text-left
-    .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
-      h3
-        | Two best talks will be recommended for publication in Symmetry:
-      a  href='http://www.mdpi.com/journal/symmetry' class='symmetry-link'
-        |http://www.mdpi.com/journal/symmetry
-    .col-md-8.col-sm-10.col-md-offset-2.col-sm-offset-1.col-xs-offset-1
-      h3
-        | Sponsors:
-        = link_to image_tag('tusur.jpg', class: 'tusur'), "http://tusur.ru/"
-
-.wrapper.registration-form.container-fluid#form
-  = render 'claims/form'
-
-
 div#map
