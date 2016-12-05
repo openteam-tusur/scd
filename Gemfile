@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'attribute_normalizer'
-gem 'auth_client', :git => 'https://github.com/openteam-tusur/auth_client'
-gem 'auth_redis_user_connector', :git => 'https://github.com/openteam-tusur/auth_redis_user_connector'
+gem 'auth_client', git: 'https://github.com/openteam-tusur/auth_client'
+gem 'auth_redis_user_connector', git: 'https://github.com/openteam-tusur/auth_redis_user_connector'
 gem 'bootstrap-sass'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.37'
 gem 'cancan'
@@ -14,12 +14,13 @@ gem 'esp-commons'
 gem 'jquery-rails'
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'non-stupid-digest-assets'
+gem 'openteam-commons', '~> 0.3.3'
 gem 'pg'
 gem 'protected_attributes'
 gem 'rack-utf8_sanitizer'
 gem 'rails', '~> 4.2.5'
 gem 'rails_admin'
-gem 'recaptcha', :require => 'recaptcha/rails'
+gem 'recaptcha', require: 'recaptcha/rails'
 gem 'redis-session-store'
 gem 'rest-client'
 gem 'sass-rails'
@@ -41,15 +42,15 @@ group :test do
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-  gem 'annotate', :require => false
-  gem 'brakeman', :require => false
+  gem 'annotate', require: false
+  gem 'brakeman', require: false
   gem 'capistrano-auth-subscriber'
   gem 'foreman'
   gem 'hirb'
-  gem 'openteam-capistrano', '~> 1.0.11'
-  gem 'quiet_assets' #, :require => false
+  gem 'openteam-capistrano', '~> 1.0.16'
+  gem 'quiet_assets'
+  gem 'spring'
+  gem 'web-console', '~> 2.0'
 end
 
 group :production do
