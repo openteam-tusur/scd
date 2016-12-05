@@ -26,6 +26,7 @@ gem 'rest-client'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'slim-rails'
+gem 'sprockets', '~> 3.6.3'
 gem 'stop_ie'
 gem 'uglifier'
 
