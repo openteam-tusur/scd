@@ -50,6 +50,7 @@ group :development do
   gem 'hirb'
   gem 'openteam-capistrano', '~> 1.0.16'
   gem 'quiet_assets'
+  gem 'rails-erd'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
